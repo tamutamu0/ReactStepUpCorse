@@ -3,6 +3,8 @@ import logo from './logo.svg'
 import './App.css'
 import { ChildArea } from '../ChildArea';
 import { InlineStyle } from './components/inlineStyle';
+//viteがsassに非対応のため
+// import { CssModules} from './components/CssModules.jsx';
 
 function App() {
   const [text, setText] = useState('');
