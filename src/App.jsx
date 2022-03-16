@@ -3,6 +3,9 @@ import logo from './logo.svg'
 import './App.css'
 import { ChildArea } from '../ChildArea';
 import { InlineStyle } from './components/inlineStyle';
+import { StyledJsx } from './components/StyledJsx';
+import { StyledConponents } from './components/StyledComponents';
+import { Emotion } from './components/Emotion';
 //viteがsassに非対応のため
 // import { CssModules} from './components/CssModules.jsx';
 
@@ -23,6 +26,9 @@ function App() {
       <ChildArea open={open} text={text} onClickClose={onClickClose} />
 
       <InlineStyle /> 
+      <StyledJsx />
+      <StyledConponents />
+      <Emotion />
     </div>
 
   )
