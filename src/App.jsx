@@ -18,13 +18,16 @@ function App() {
   const onClickClose = () => useCallback(setOpen(false), []);
 
   return (
+    
     <div className="App">
+      {/* React基本 */}
       <input value={text} onChange={onChangeText} />
       <br />
       <br />
       <button onClick={onClickOpen}>{open ? '非表示する' : '表示する'}</button>
       <ChildArea open={open} text={text} onClickClose={onClickClose} />
 
+      {/* CSS in JS */}
       <InlineStyle /> 
       <StyledJsx />
       <StyledConponents />
